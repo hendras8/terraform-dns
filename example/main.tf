@@ -7,5 +7,5 @@ module "default-dns" {
   type           = "A"
   ttl            = "300"
   rrdatas        = [module.default.network_ip[count.index]]
+  count          = 1
 }
-
